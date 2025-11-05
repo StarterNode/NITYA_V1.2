@@ -1,0 +1,41 @@
+{
+  "name": "nitya-v1.1",
+  "version": "1.1.0",
+  "description": "Nitya AI Sales Discovery System",
+  "main": "server/proxy-server.js",
+  "scripts": {
+    "start": "node server/proxy-server.js",
+    "dev": "nodemon server/proxy-server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "server/**/*.js",
+      "public/js/**/*.js",
+      "!server/proxy-server.js",
+      "!**/node_modules/**"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "jsdom": "^27.1.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^7.1.4"
+  }
+}

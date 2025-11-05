@@ -1,0 +1,676 @@
+{
+  "userId": "test_user_001",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Hey! I'm Nitya 👋 I'm here to build your website with you. Do you have a site already or are we building from scratch?"
+    },
+    {
+      "role": "user",
+      "content": "build from scratch"
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect! We're gonna build something great. Let's start with the hero section - the first thing visitors see.\n\nWhat's your business name?"
+    },
+    {
+      "role": "user",
+      "content": "it is for my musical project Lès Love I want a I don't know what I want the Hero Section to say it's more of a look so maybe just and image?"
+    },
+    {
+      "role": "assistant",
+      "content": "Love that! A visual-first hero is super powerful for a music project.\n\nGot an image you want to use for the hero? You can upload it and we'll make it the star of the show!"
+    },
+    {
+      "role": "user",
+      "content": "how do I upload it?"
+    },
+    {
+      "role": "assistant",
+      "content": "You can drag and drop the image right into this chat, or click the paperclip/attach icon if you see one!\n\nOnce it's uploaded, I'll grab it and we'll build your hero section around it."
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe were just getting started on your hero section for Lès Love - you wanted to go image-first which is gonna look amazing for a music project. \n\nReady to upload that hero image? Just drag and drop it into the chat!"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're working on Lès Love (love that name!). We were about to get your hero image uploaded - you wanted a visual-first hero section which is perfect for a music project.\n\nReady to upload that image? Just drag and drop it into the chat!"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch. You wanted a visual-first hero section (perfect for a music project!), but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch. You wanted a visual-first hero section (super cool for a music project!), but no images uploaded yet.\n\nReady to upload that hero image? Just drag and drop it into the chat!"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM: Resumed session detected. Please use your MCP tools to read conversation.json, metadata.json, sitemap.json, styles.css, and assets folder to catch yourself up on our progress. Then greet the user naturally and let them know where we left off."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Welcome back! 👋 \n\nWe're building Lès Love's site from scratch - you wanted that visual-first hero section for your music project, but no images uploaded yet.\n\nReady to drag and drop that hero image into the chat?"
+    }
+  ],
+  "approvedSections": {},
+  "messageCount": 167,
+  "savedAt": "2025-11-05T04:40:42.177Z"
+}

@@ -1,0 +1,505 @@
+/* Import global design tokens */
+@import url('../global.css');
+
+/* ============================================
+   MAIN CONTAINER - VERTICAL STACK
+   ============================================ */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* ============================================
+   DEVICE TOGGLE BAR - VERTICAL STACK UNDER LOGO
+   ============================================ */
+
+.device-toggle-bar {
+    position: absolute;
+    top: 6rem; /* Below logo */
+    left: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    gap: 0.5rem;
+    padding: 0.75rem;
+    /* Frosted glass effect */
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.device-toggle-btn {
+    width: 120px; /* Fixed width for vertical stack */
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-align: left;
+}
+
+.device-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(200, 200, 200, 0.5);
+}
+
+.device-toggle-btn.active {
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    color: white;
+    border-color: var(--primary-end);
+}
+
+/* ============================================
+   PREVIEW SECTION (TOP)
+   ============================================ */
+
+.preview-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--surface);
+    position: relative;
+    min-height: 30%;
+    overflow: auto;
+}
+
+/* NITYA Logo - Top-Left with Glass Effect */
+.preview-logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    /* Frosted glass effect */
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 10;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.preview-logo .logo-cube {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    border-radius: 4px;
+}
+
+/* Online Indicator - Top-Right with Glass Effect */
+.preview-status {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    /* Frosted glass effect */
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 10;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.preview-status .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    animation: pulse 2s infinite;
+}
+
+.preview-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.preview-container.desktop {
+    max-width: 100%;
+}
+
+.preview-container.tablet {
+    max-width: 768px;
+}
+
+.preview-container.mobile {
+    max-width: 375px;
+}
+
+#preview-iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: white;
+}
+
+/* ============================================
+   RESIZABLE DIVIDER
+   ============================================ */
+
+.resize-divider {
+    height: 8px;
+    background: var(--border);
+    cursor: ns-resize;
+    position: relative;
+    z-index: 100;
+    transition: background 0.2s, height 0.1s;
+    flex-shrink: 0; /* Prevent divider from being compressed */
+}
+
+/* Larger hit area for easier grabbing */
+.resize-divider::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    cursor: ns-resize;
+}
+
+.resize-divider:hover {
+    background: var(--primary-start);
+    height: 10px; /* Slightly thicker on hover */
+}
+
+.resize-divider:active {
+    background: var(--primary-end);
+}
+
+.resize-divider::after {
+    content: '⋮';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    transition: color 0.2s;
+    pointer-events: none; /* Don't interfere with dragging */
+}
+
+.resize-divider:hover::after {
+    color: white;
+}
+
+/* ============================================
+   BOTTOM SECTION - HORIZONTAL SPLIT
+   ============================================ */
+
+.bottom-section {
+    display: flex;
+    height: 40%;
+    min-height: 20%;
+}
+
+/* ============================================
+   CHAT PANEL (BOTTOM LEFT)
+   ============================================ */
+
+.chat-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    border-right: 2px solid var(--border);
+}
+
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Message Bubbles */
+.message {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    max-width: 80%;
+}
+
+.message.user {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.message.ai {
+    align-self: flex-start;
+}
+
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.message.ai .message-avatar {
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    color: white;
+}
+
+.message.user .message-avatar {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+.message-bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.message.ai .message-bubble {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+.message.user .message-bubble {
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    color: white;
+}
+
+/* System Messages */
+.message.system .message-bubble {
+    background: var(--warning);
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.typing-dots {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    animation: bounce 1.4s infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+}
+
+/* Input Area */
+.input-container {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 0.75rem;
+    background: var(--surface);
+    flex-shrink: 0;
+}
+
+#user-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    resize: none;
+    max-height: 120px;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: var(--primary-end);
+}
+
+.btn-send {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-send:hover {
+    transform: translateY(-2px);
+}
+
+/* Upload Button */
+.btn-upload {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    border: 2px dashed var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    margin: 0.5rem 0;
+}
+
+.btn-upload:hover {
+    border-color: var(--primary-end);
+}
+
+/* ============================================
+   ASSETS PANEL (BOTTOM RIGHT)
+   ============================================ */
+
+.assets-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+}
+
+.assets-panel iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ============================================
+   PHASE 6: INLINE HTML PREVIEWS IN CHAT
+   ============================================ */
+
+.inline-preview {
+    margin-top: 1rem;
+    border: 2px solid var(--primary-start);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    max-width: 600px; /* Increased from 500px for better desktop feel */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inline-preview-label {
+    background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.inline-preview-content {
+    padding: 1rem;
+    max-height: 400px;
+    overflow: auto;
+    /* Make inline previews feel like desktop mockups */
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Reset styles for preview content (prevent chat CSS bleeding) */
+.inline-preview-content * {
+    all: revert;
+}
+
+/* Responsive inline preview images */
+.inline-preview-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Typography scaling for inline previews */
+.inline-preview-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.inline-preview-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.inline-preview-content p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.inline-preview-content ul,
+.inline-preview-content ol {
+    margin: 0 0 0.75rem 0;
+    padding-left: 1.5rem;
+}
+
+.inline-preview-content a {
+    color: var(--primary-start);
+    text-decoration: none;
+}
+
+.inline-preview-content a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .chat-panel,
+    .preview-panel {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .inline-preview {
+        max-width: 100%;
+    }
+}

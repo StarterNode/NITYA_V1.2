@@ -1,0 +1,28 @@
+{
+  "_note": "THIS IS THE ONLY FILE WITH PRICE NUMBERS",
+  "version": "1.1",
+  "offer": {
+    "firstMonth": {
+      "amount": 40,
+      "includes": ["Website build", "First month hosting"],
+      "description": "$40 first month special - website + hosting included"
+    },
+    "secondMonth": {
+      "amount": 199,
+      "description": "One-time completion fee"
+    },
+    "ongoing": {
+      "amount": 26,
+      "period": "monthly",
+      "description": "Hosting + maintenance after month 2"
+    }
+  },
+  "presentation_rules": {
+    "when_to_present": "After all discovery sections completed",
+    "format": "Simple, clear, no complex breakdowns",
+    "objection_responses": {
+      "too_expensive": "This is the complete package - no hidden fees",
+      "need_to_think": "That makes sense! Can I answer any questions while you consider?"
+    }
+  }
+}

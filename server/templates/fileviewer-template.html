@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Manager</title>
+    <style>
+        /* ===== VARIABLES ===== */
+        :root {
+            --primary: #4CAF50;
+            --primary-hover: #45a049;
+            --danger: #ff4444;
+            --danger-hover: #cc0000;
+            --bg: #f5f5f5;
+            --card-bg: #ffffff;
+            --text: #333333;
+            --text-secondary: #666666;
+            --text-muted: #999999;
+            --border: #cccccc;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== GLOBAL ===== */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                         Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            padding: 2rem;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+        }
+
+        /* ===== UPLOAD ZONE ===== */
+        .upload-zone {
+            border: 2px dashed var(--border);
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background: var(--card-bg);
+            transition: border-color 0.3s;
+        }
+
+        .upload-zone:hover {
+            border-color: var(--primary);
+        }
+
+        .upload-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .upload-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        .upload-zone p {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ===== FILE GRID ===== */
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        /* ===== FILE CARD ===== */
+        .file-card {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .file-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--primary);
+        }
+
+        .file-card.selected {
+            border: 3px solid var(--primary);
+            background: #f0f9f0;
+        }
+
+        .file-card .checkmark {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .file-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: var(--bg);
+        }
+
+        .file-name {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            word-break: break-word;
+            color: var(--text-secondary);
+            min-height: 2.5rem;
+        }
+
+        .delete-btn {
+            background: var(--danger);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            width: 100%;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: var(--danger-hover);
+        }
+
+        /* ===== EMPTY STATE ===== */
+        .empty-state {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 4rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* ===== LOADING STATE ===== */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+        }
+
+        /* ===== ERROR STATE ===== */
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            border: 1px solid #ef5350;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .file-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Asset Manager</h1>
+
+    <!-- Upload Zone -->
+    <div class="upload-zone">
+        <input type="file" id="file-input" style="display: none;"
+               accept="image/jpeg,image/jpg,image/png,image/gif,image/webp,image/x-icon">
+        <button class="upload-btn" id="upload-btn">📎 Upload File</button>
+        <p>Supported: JPG, PNG, GIF, WebP, ICO (Max 10MB)</p>
+    </div>
+
+    <!-- Error Display -->
+    <div id="error-container"></div>
+
+    <!-- File Grid -->
+    <div class="file-grid" id="file-grid">
+        <div class="loading">Loading files...</div>
+    </div>
+
+    <script>
+        // ===== CONFIGURATION =====
+        const CONFIG = {
+            userId: 'test_user_001', // Will be dynamic in production
+            apiBase: 'http://localhost:3000',
+            maxFileSize: 10 * 1024 * 1024, // 10MB
+            allowedTypes: ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp', 'image/x-icon']
+        };
+
+        // ===== STATE =====
+        const state = {
+            files: [],
+            loading: false,
+            error: null
+        };
+
+        // ===== API FUNCTIONS =====
+
+        /**
+         * Fetch list of files from server
+         */
+        async function fetchFiles() {
+            try {
+                const response = await fetch(`${CONFIG.apiBase}/api/list-assets/${CONFIG.userId}`);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.error || 'Failed to load files');
+                }
+
+                return data.files || [];
+            } catch (error) {
+                console.error('Fetch files error:', error);
+                throw error;
+            }
+        }
+
+        /**
+         * Upload file to server
+         */
+        async function uploadFile(file, customName) {
+            try {
+                // Validate file size
+                if (file.size > CONFIG.maxFileSize) {
+                    throw new Error(`File size exceeds ${CONFIG.maxFileSize / 1024 / 1024}MB limit`);
+                }
+
+                // Validate file type
+                if (!CONFIG.allowedTypes.includes(file.type)) {
+                    throw new Error('Invalid file type. Only images allowed.');
+                }
+
+                // Build filename with extension
+                const ext = file.name.split('.').pop();
+                const filename = `${customName}.${ext}`;
+
+                // Create form data
+                const formData = new FormData();
+                formData.append('file', file, filename);
+
+                // Upload
+                const response = await fetch(`${CONFIG.apiBase}/api/upload/${CONFIG.userId}`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.error || 'Upload failed');
+                }
+
+                return data;
+            } catch (error) {
+                console.error('Upload error:', error);
+                throw error;
+            }
+        }
+
+        /**
+         * Delete file from server
+         */
+        async function deleteFile(filename) {
+            try {
+                const response = await fetch(
+                    `${CONFIG.apiBase}/api/delete/${CONFIG.userId}/${encodeURIComponent(filename)}`,
+                    { method: 'DELETE' }
+                );
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.error || 'Delete failed');
+                }
+
+                return data;
+            } catch (error) {
+                console.error('Delete error:', error);
+                throw error;
+            }
+        }
+
+        // ===== UI FUNCTIONS =====
+
+        /**
+         * Render file grid
+         */
+        function renderGrid() {
+            const grid = document.getElementById('file-grid');
+
+            // Loading state
+            if (state.loading) {
+                grid.innerHTML = '<div class="loading">Loading files...</div>';
+                return;
+            }
+
+            // Empty state
+            if (state.files.length === 0) {
+                grid.innerHTML = '<div class="empty-state">No files uploaded yet</div>';
+                return;
+            }
+
+            // Render cards
+            grid.innerHTML = '';
+            state.files.forEach(filename => {
+                const card = createFileCard(filename);
+                grid.appendChild(card);
+            });
+        }
+
+        /**
+         * Create file card element
+         */
+        function createFileCard(filename) {
+            const card = document.createElement('div');
+            card.className = 'file-card';
+
+            // Phase 6: Make card clickable for selection
+            card.onclick = () => selectImage(filename, card);
+
+            // Image
+            const img = document.createElement('img');
+            img.src = `${CONFIG.apiBase}/prospects/${CONFIG.userId}/assets/${filename}`;
+            img.alt = filename;
+            img.onerror = () => {
+                img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="150"%3E%3Crect fill="%23ddd" width="200" height="150"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" fill="%23999"%3EImage%3C/text%3E%3C/svg%3E';
+            };
+
+            // Filename
+            const nameDiv = document.createElement('div');
+            nameDiv.className = 'file-name';
+            nameDiv.textContent = filename;
+            nameDiv.title = filename; // Tooltip for long names
+
+            // Delete button
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = '🗑️ Delete';
+            deleteBtn.onclick = (e) => {
+                e.stopPropagation(); // Prevent card click (selection)
+                handleDelete(filename);
+            };
+
+            // Assemble card
+            card.appendChild(img);
+            card.appendChild(nameDiv);
+            card.appendChild(deleteBtn);
+
+            return card;
+        }
+
+        /**
+         * Show error message
+         */
+        function showError(message) {
+            const container = document.getElementById('error-container');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            container.innerHTML = '';
+            container.appendChild(errorDiv);
+
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 5000);
+        }
+
+        /**
+         * Send message to parent window
+         */
+        function notifyParent(type, filename) {
+            const message = {
+                type: type,
+                filename: filename,
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                window.parent.postMessage(message, '*');
+                console.log('Sent to parent:', message);
+            } catch (error) {
+                console.error('postMessage error:', error);
+            }
+        }
+
+        /**
+         * Handle image selection (Phase 6: Chat-First Embedding)
+         */
+        function selectImage(filename, cardElement) {
+            // Visual feedback
+            cardElement.classList.add('selected');
+
+            // Add checkmark
+            const checkmark = document.createElement('div');
+            checkmark.className = 'checkmark';
+            checkmark.innerHTML = '✓';
+            cardElement.appendChild(checkmark);
+
+            // Notify parent
+            notifyParent('FILE_SELECTED', filename);
+
+            // Remove visual feedback after 2 seconds
+            setTimeout(() => {
+                cardElement.classList.remove('selected');
+                if (checkmark.parentNode) {
+                    checkmark.remove();
+                }
+            }, 2000);
+        }
+
+        // ===== EVENT HANDLERS =====
+
+        /**
+         * Handle upload button click
+         */
+        function handleUploadClick() {
+            document.getElementById('file-input').click();
+        }
+
+        /**
+         * Handle file selection
+         */
+        async function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            // Reset input
+            event.target.value = '';
+
+            // Prompt for custom name
+            const defaultName = file.name.split('.')[0];
+            const customName = prompt('Name this file (no extension needed):', defaultName);
+
+            if (!customName || customName.trim() === '') {
+                return; // User cancelled
+            }
+
+            // Upload
+            try {
+                state.loading = true;
+                renderGrid();
+
+                const result = await uploadFile(file, customName.trim());
+
+                // Reload files
+                await loadFiles();
+
+                // Notify parent
+                notifyParent('FILE_UPLOADED', result.filename);
+
+            } catch (error) {
+                showError(error.message);
+            } finally {
+                state.loading = false;
+                renderGrid();
+            }
+        }
+
+        /**
+         * Handle delete button click
+         */
+        async function handleDelete(filename) {
+            // Confirm
+            if (!confirm(`Delete ${filename}?`)) {
+                return;
+            }
+
+            // Delete
+            try {
+                state.loading = true;
+                renderGrid();
+
+                await deleteFile(filename);
+
+                // Reload files
+                await loadFiles();
+
+                // Notify parent
+                notifyParent('FILE_DELETED', filename);
+
+            } catch (error) {
+                showError(error.message);
+            } finally {
+                state.loading = false;
+                renderGrid();
+            }
+        }
+
+        /**
+         * Load files from server
+         */
+        async function loadFiles() {
+            try {
+                state.loading = true;
+                state.error = null;
+                renderGrid();
+
+                state.files = await fetchFiles();
+
+            } catch (error) {
+                state.error = error.message;
+                showError('Failed to load files: ' + error.message);
+                state.files = [];
+            } finally {
+                state.loading = false;
+                renderGrid();
+            }
+        }
+
+        // ===== INITIALIZATION =====
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Bind events
+            document.getElementById('upload-btn').addEventListener('click', handleUploadClick);
+            document.getElementById('file-input').addEventListener('change', handleFileSelect);
+
+            // Load files
+            loadFiles();
+
+            console.log('Fileviewer initialized for user:', CONFIG.userId);
+        });
+    </script>
+</body>
+</html>
